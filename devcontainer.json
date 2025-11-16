@@ -1,0 +1,12 @@
+{
+  "name": "Ubuntu-RDP",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.remote-server"]
+    }
+  },
+  "forwardPorts": [3389],
+  "postCreateCommand": "bash setup.sh"
+}
